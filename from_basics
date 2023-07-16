@@ -1,0 +1,21 @@
+Creating a Dockerfile:
+
+$ mkdir Dockerfiles
+$ cd Dockerfiles/
+$ touch Dockerfiles
+$ vim dockerfile 
+
+Now press I for inserting in your dockerfile
+
+
+FROM ubuntu
+RUN apt-get update 
+CMD ["echo" , " Hello world from my first docker image "]
+
+
+Press Esc to switch into Command mode 
+Press !wq to save and exit from the file 
+
+$ docker build -t <image_name along with : tag>            { Image will be created here }
+$ docker images
+$ docker run <image_id>                                    { Conatiner will be made here }
